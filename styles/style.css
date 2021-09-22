@@ -1,0 +1,107 @@
+@font-face { 
+    font-family: 'GothamPro'; 
+    src: url('../fonts/GothamPro.eot'); 
+    src: url('../fonts/GothamPro.eot?iefix') format('eot'),
+         url('../fonts/GothamPro.woff') format('woff'), 
+         url('../fonts/GothamPro.ttf')  format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+  }
+@font-face { 
+    font-family: 'GothamPro'; 
+    src: url('../fonts/GothamPro-Bold.eot'); 
+    src: url('../fonts/GothamPro-Bold.eot?iefix') format('eot'),
+         url('../fonts/GothamPro-Bold.woff') format('woff'), 
+         url('../fonts/GothamPro-Bold.ttf')  format('truetype');
+    font-weight: bold; 
+    font-style: normal; 
+  }
+@font-face { 
+    font-family: 'GothamPro'; 
+    src: url('../fonts/GothamPro-Light.eot'); 
+    src: url('../fonts/GothamPro-Light.eot?iefix') format('eot'),
+         url('../fonts/GothamPro-Light.woff') format('woff'), 
+         url('../fonts/GothamPro-Light.ttf')  format('truetype');
+    font-weight: 300; 
+    font-style: normal; 
+  }
+@font-face { 
+    font-family: 'GothamPro'; 
+    src: url('../fonts/GothamPro-Medium.eot'); 
+    src: url('../fonts/GothamPro-Medium.eot?iefix') format('eot'),
+         url('../fonts/GothamPro-Medium.woff') format('woff'), 
+         url('../fonts/GothamPro-Medium.ttf')  format('truetype');
+    font-weight: 500; 
+    font-style: normal; 
+  }
+html {
+  font-family: 'GothamPro';
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;  
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 850px;
+    height: 100%;
+    padding: 0 3px;
+    margin: 0 auto;
+}
+.header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        background-image: -moz-linear-gradient( 180deg, rgb(253,29,29) 0%, rgb(225,48,108) 0%, rgb(255,220,128) 0%, rgb(247,119,55) 0%, rgb(193,53,132) 0%, rgb(253,29,29) 0%, rgb(0,0,0) 0%, rgb(88,81,219) 0%, rgb(252,175,69) 0%, rgb(245,96,64) 0%, rgb(88,81,219) 0%, rgb(131,58,180) 50%, rgb(229,18,131) 100%);
+        background-image: -webkit-linear-gradient( 180deg, rgb(253,29,29) 0%, rgb(225,48,108) 0%, rgb(255,220,128) 0%, rgb(247,119,55) 0%, rgb(193,53,132) 0%, rgb(253,29,29) 0%, rgb(0,0,0) 0%, rgb(88,81,219) 0%, rgb(252,175,69) 0%, rgb(245,96,64) 0%, rgb(88,81,219) 0%, rgb(131,58,180) 50%, rgb(229,18,131) 100%);
+        background-image: -ms-linear-gradient( 180deg, rgb(253,29,29) 0%, rgb(225,48,108) 0%, rgb(255,220,128) 0%, rgb(247,119,55) 0%, rgb(193,53,132) 0%, rgb(253,29,29) 0%, rgb(0,0,0) 0%, rgb(88,81,219) 0%, rgb(252,175,69) 0%, rgb(245,96,64) 0%, rgb(88,81,219) 0%, rgb(131,58,180) 50%, rgb(229,18,131) 100%);
+}
+.header-inner {
+    width: 852px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header-nav {
+    width: 100%;
+    line-height: 20px;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item a{
+    color: #ffffff;
+    transition: all .3s;
+}
+.nav-item a:hover{
+    color: #bebebe;
+}
+.nav-item {
+    margin-right: 50px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+.search-btn {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid black;
+    /* border: 1px solid;
+    border-color: #636083; */
+    border-radius: 50%;
+    right: -88px;
+}
