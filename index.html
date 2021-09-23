@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test task</title>
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
     <header class="header">
@@ -25,6 +26,47 @@
             <div class="search-btn"></div>
         </div>
     </header>
-    <script src="/scripts/script.js"></script>
+    <section class="slider-wrapper">
+        <div class="slider">
+            <div class="slider-item" style="background-image: url(assets/slider-pic.png);">
+                <div class="slide-text">
+                    <p class="product-title">
+                        pro brow defining powder 
+                    </p>
+                    <p class="product">
+                        пудра для бровей
+                    </p>
+                </div>
+                <a href="#" onclick="false" class="details"><p>подробнее</p></a>
+            </div>
+            <div class="slider-item" style="background-image: url(assets/slider-pic.png);">
+                <div class="slide-text">
+                    <p class="product-title">
+                        pro brow defining powder
+                    </p>
+                    <p class="product">
+                        пудра для бровей
+                    </p>
+                </div>
+                <a href="#" onclick="false" class="details"><p>подробнее</p></a>
+            </div>
+            <div class="slider-item" style="background-image: url(assets/slider-pic.png);">
+                <div class="slide-text">
+                    <p class="product-title">
+                        pro brow defining powder
+                    </p>
+                    <p class="product">
+                        пудра для бровей
+                    </p>
+                </div>
+                <a href="#" onclick="false" class="details"><p>подробнее</p></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
