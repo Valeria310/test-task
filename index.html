@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,20 +14,85 @@
         <div class="header-inner">
             <nav class="header-nav">
                 <ul class="nav-list">
-                    <!-- To do: add links -->
-                    <li class="nav-item"><a href="">каталог</a></li>
-                    <li class="nav-item"><a href="">обучение</a></li>
-                    <li class="nav-item"><a href="">спецпредложения</a></li>
-                    <li class="nav-item"><a href="">новости</a></li>
-                    <li class="nav-item"><a href="">сотрудничество</a></li>
-                    <li class="nav-item"><a href="">контакты</a></li>
+                    <li class="nav-item">
+                        <a href="">каталог</a>
+                        <div class="tooltip-wrapper">
+                            <div class="tooltip">
+                                <ul class="tooltip-nav">
+                                    <li class="tooltip-nav-item"><a href="">наша продукция</a></li>
+                                    <li class="tooltip-nav-item"><a href="">услуги</a></li>
+                                    <li class="tooltip-nav-item"><a href="">обучение</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">обучение</a>
+                        <div class="tooltip-wrapper">
+                            <div class="tooltip">
+                                <ul class="tooltip-nav">
+                                    <li class="tooltip-nav-item"><a href="">наша продукция</a></li>
+                                    <li class="tooltip-nav-item"><a href="">услуги</a></li>
+                                    <li class="tooltip-nav-item"><a href="">обучение</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">спецпредложения</a>
+                        <div class="tooltip-wrapper">
+                            <div class="tooltip">
+                                <ul class="tooltip-nav">
+                                    <li class="tooltip-nav-item"><a href="">наша продукция</a></li>
+                                    <li class="tooltip-nav-item"><a href="">услуги</a></li>
+                                    <li class="tooltip-nav-item"><a href="">обучение</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">новости</a>
+                        <div class="tooltip-wrapper">
+                            <div class="tooltip">
+                                <ul class="tooltip-nav">
+                                    <li class="tooltip-nav-item"><a href="">наша продукция</a></li>
+                                    <li class="tooltip-nav-item"><a href="">услуги</a></li>
+                                    <li class="tooltip-nav-item"><a href="">обучение</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">сотрудничество</a>
+                        <div class="tooltip-wrapper">
+                            <div class="tooltip">
+                                <ul class="tooltip-nav">
+                                    <li class="tooltip-nav-item"><a href="">наша продукция</a></li>
+                                    <li class="tooltip-nav-item"><a href="">услуги</a></li>
+                                    <li class="tooltip-nav-item"><a href="">обучение</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">контакты</a>
+                        <div class="tooltip-wrapper">
+                            <div class="tooltip">
+                                <ul class="tooltip-nav">
+                                    <li class="tooltip-nav-item"><a href="">наша продукция</a></li>
+                                    <li class="tooltip-nav-item"><a href="">услуги</a></li>
+                                    <li class="tooltip-nav-item"><a href="">обучение</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <div class="search-btn"></div>
         </div>
     </header>
     <main class="main">
-        <section class="slider-wrapper">
+        <div class="slider-wrapper">
         <div class="slider">
             <div class="slider-item" style="background-image: url(assets/slider-pic.png);">
                 <div class="slide-text">
@@ -65,14 +130,20 @@
         </div>
         <div class="pop-up-wrapper">
             <div class="pop-up">
-
+                <form class="reg-form">
+                    <p class="reg-title">Регистрация/Авторизация</p>
+                    <p class="reg-info">Для скачивания прайс-листа,<br>  необходимо пройти процедуру регистрации</p>
+                    <input class="org-name invalid" type="text" placeholder="Название организации">
+                    <textarea class="comment invalid" cols="30" rows="10" placeholder="Комментарии…"></textarea>
+                    <input class="reg-submit" type="submit" value="зарегистрироваться">
+                </form>
+                <div class="cross"></div>
             </div>
-            <div class="cross"></div>
         </div>
-        </section>
+        </div>
         <section class="services">
             <div class="section-title-wrapper">
-                <p class="section-title">услуги</p>
+                <h2 class="section-title">услуги</h2>
             </div>
             <div class="section-services-inner">
                 <a class="services-wrapper" href="#">
@@ -94,7 +165,7 @@
         <section class="news">
             <div class="container">
                 <div class="section-title-wrapper">
-                    <p class="section-title">новости</p>
+                    <h2 class="section-title">новости</h2>
                 </div>
                 <div class="section-news-inner">
                     <a href="" class="news-card-container" style="background-image: url(/assets/news.png);">
@@ -148,7 +219,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-table">
+        <div class="section-table">
             <div class="container">
                 <table class="table">
                     <tr>
@@ -177,8 +248,8 @@
                     </tr>
                 </table>
             </div>
-        </section>
-        <section class="floats">
+        </div>
+        <div class="floats">
             <div class="container">
                 <div class="floats-inner">
                     <img src="assets/floats-img.png" alt="" class="floats-img1">
@@ -189,8 +260,8 @@
                     </p>
                 </div>
             </div>
-        </section>
-        <section class="tabs">
+        </div>
+        <div class="tabs">
             <div class="container">
                 <div class="tabs-body">
                     <input type="radio" class="tab-item" name="tab-btn" id="tab-btn-1" value="" checked>
@@ -204,7 +275,8 @@
                     <div class="tabs-block" id="tab_3">Значимость этих проблем настолько очевидна, что укрепление и развитие структуры позволяет выполнять важные задания по разработке новых предложений. Не следует, однако забывать, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании соответствующий условий активизации. Не следует, однако забывать, что укрепление и развитие структуры позволяет оценить значение существенных финансовых и административных условий.</div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-btn"></div>
     </main>
     <footer class="footer">
         <div class="footer-inner">
@@ -220,7 +292,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="scripts/slick.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/main.js"></script>

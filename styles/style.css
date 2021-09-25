@@ -88,6 +88,42 @@ a {
     margin-right: 50px;
     text-transform: uppercase;
     letter-spacing: -0.2px;
+    position: relative;
+    cursor: pointer;
+}
+.tooltip-wrapper {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    height: 135px;
+    align-items: flex-end;
+    left: -48px;
+    top: 13px;
+}
+.tooltip {
+    width: 163px;
+    height: 100px;
+    background-color: #813bb5;
+    padding: 19px;
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    position: relative;
+}
+.tooltip::before {
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #813bb5;
+    position: absolute;
+    left: 73px;
+    top: -7px;
+}
+.nav-item:hover .tooltip-wrapper {
+    display: flex;
+    
 }
 .nav-item:last-child {
     margin-right: 0;
@@ -100,7 +136,6 @@ a {
     background-image: url(../assets/magnifying-glass.png);
     background-repeat: no-repeat;
     background-position: center;
-    /* border: 1px solid black; */
     border: 1px solid;
     border-color: #636083;
     border-radius: 50%;
@@ -544,65 +579,28 @@ tr:last-child {
 #tab-btn-3:hover+.tab-item-label {
     color: rgb(131,58,180);
 }
-/*
-.tabs-nav {
-    max-width: 846px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 22px;
-    border-left: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
-} */
-/* .tab-item {
-    flex: 0 1 33.333%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding: 0;
-    background-color: #fff;
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
-    position: relative;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: bold;
-    color: #333333;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all .5s;
-}
-.tab-item+.tab-item::before {
-    content: "|";
-    font-size: 26px;
-    color: #dddddd;
-    position: absolute;
-    left: 0;
-    top: 13px;
-}
-.tab-item:hover {
-    color: rgb(131,58,180);
-}
-.tabs-body {
-    font-size: 14px;
-    line-height: 21px;
-    color: #333333;
-}
-.tabs-block {
+.scroll-btn {
     display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border: 2px solid #666666;
+    border-radius: 3px;
+    background-image: url(../assets/scroll-btn.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 48% 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all .3s;
 }
-.tabs-block:target {
-    display: block;
-} */
-/* .active {
-    pointer-events: none;
-    color: #584edb;
-    border-top: 1px solid #584edb;
-    border-bottom: 1px solid #584edb;
-} */
+.scroll-btn:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    border: 2px solid #666666;
+}
 .footer {
     height: 60px;
 }
@@ -660,4 +658,101 @@ tr:last-child {
     left: 38%;
     top: 30%;
     width: 24px;   
+}
+.pop-up-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.pop-up {
+    width: 615px;
+    height: 415px;
+    margin: 0 auto;
+    margin-top: 190px;
+    background-color: #fff;
+    position: relative;
+    padding: 34px 40px 58px 40px;
+}
+.reg-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reg-title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.reg-info {
+    width: 65%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    margin-bottom: 18px;
+}
+.org-name,
+.comment {
+    width: 540px;
+    border-radius: 0;
+    border: 1px solid #e5e5e5;
+    padding: 17px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #808080;
+    letter-spacing: 1px;
+    outline: none;
+}
+.org-name:focus,
+.comment:focus {
+    border-color: #45668e;
+}
+.org-name {
+    height: 40px;
+    margin-bottom: 20px;
+}
+.comment {
+    height: 105px;
+    margin-bottom: 28px;
+    padding-top: 12px;
+    resize: none;
+}
+.reg-submit {
+    width: 540px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #e51283;
+    border: 2px solid #e51283;
+    text-transform: uppercase;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+.reg-submit:hover {
+    color: #fff;
+    background-color: #e51283;
+}
+.cross {
+    position: absolute;
+    top: 0;
+    right: -36px;
+    width: 21px;
+    height: 21px;
+    background-image: url(../assets/cross.png);
+    cursor: pointer;
+}
+.cross:hover {
+    transform: scale(1.1);
 }
