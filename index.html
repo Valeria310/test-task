@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-inner">
             <nav class="header-nav">
                 <ul class="nav-list">
@@ -137,8 +137,8 @@
                 <form class="reg-form">
                     <p class="reg-title">Регистрация/Авторизация</p>
                     <p class="reg-info">Для скачивания прайс-листа,<br>  необходимо пройти процедуру регистрации</p>
-                    <input class="org-name invalid" type="text" placeholder="Название организации">
-                    <textarea class="comment invalid" cols="30" rows="10" placeholder="Комментарии…"></textarea>
+                    <input class="org-name" type="text" placeholder="Название организации">
+                    <textarea class="comment" cols="30" rows="10" placeholder="Комментарии…"></textarea>
                     <input class="reg-submit" type="submit" value="зарегистрироваться">
                 </form>
                 <div class="cross"></div>
@@ -286,7 +286,7 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-btn"></div>
+        <a href="#header" class="scroll-btn"></a>
     </main>
     <footer class="footer">
         <div class="footer-inner">

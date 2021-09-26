@@ -30,15 +30,6 @@ window.addEventListener('scroll', () => {
   }
 })
 
-scrollBtn.addEventListener('click', () => {
-  if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    })
-  }
-})
-
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   menu.classList.toggle('menu-open')
