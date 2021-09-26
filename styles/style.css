@@ -801,7 +801,7 @@ tr:last-child {
 }
 .org-name:focus,
 .comment:focus {
-    border-color: #f30000;
+    border-color: #9f0eaf;
 }
 .org-name {
     height: 40px;
