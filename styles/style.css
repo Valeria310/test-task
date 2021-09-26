@@ -38,9 +38,10 @@
     box-sizing: border-box;
 }
 html {
-  font-family: 'GothamPro';
+    font-family: 'GothamPro';
     font-size: 14px;
     font-weight: 500;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
